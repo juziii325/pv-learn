@@ -1,8 +1,8 @@
 {
-  // 文件用 UTF-8 保存，和命令行的 javac -encoding UTF-8 对齐
+  // 文件用 UTF-8 保存，和命令行的 javac -encoding UTF-8 对齐即用utf-8读取
   "files.encoding": "utf8",
 
-  // 点 ▶ 运行时，强制程序内部用 UTF-8，避免中文变乱码
+  // 点 ▶ 运行时，强制程序内部用 UTF-8，避免中文变乱码 即jvm按照utf-8去转
   "java.debug.settings.vmArgs": "-Dfile.encoding=UTF-8",
 
   // 运行结果显示在「调试控制台」（它认 UTF-8），而不是用系统默认编码的终端
@@ -11,3 +11,4 @@
   // 不让插件自动改构建配置
   "java.configuration.updateBuildConfiguration": "disabled"
 }
+//编辑器负责"存"，编译器负责"翻译"，JVM 负责"跑"。三者是三个独立程序，各自的编码设置都得对齐，否则乱码或报错。
