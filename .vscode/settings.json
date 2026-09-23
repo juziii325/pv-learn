@@ -1,4 +1,5 @@
 {
+  //编辑器负责"存"，编译器负责"翻译"，JVM 负责"跑"。三者是三个独立程序，各自的编码设置都得对齐，否则乱码或报错。
   // 文件用 UTF-8 保存，和命令行的 javac -encoding UTF-8 对齐即用utf-8读取
   "files.encoding": "utf8",
 
@@ -11,4 +12,3 @@
   // 不让插件自动改构建配置
   "java.configuration.updateBuildConfiguration": "disabled"
 }
-//编辑器负责"存"，编译器负责"翻译"，JVM 负责"跑"。三者是三个独立程序，各自的编码设置都得对齐，否则乱码或报错。
