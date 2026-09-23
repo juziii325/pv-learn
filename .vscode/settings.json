@@ -1,0 +1,13 @@
+{
+  // 文件用 UTF-8 保存，和命令行的 javac -encoding UTF-8 对齐
+  "files.encoding": "utf8",
+
+  // 点 ▶ 运行时，强制程序内部用 UTF-8，避免中文变乱码
+  "java.debug.settings.vmArgs": "-Dfile.encoding=UTF-8",
+
+  // 运行结果显示在「调试控制台」（它认 UTF-8），而不是用系统默认编码的终端
+  "java.debug.settings.console": "internalConsole",
+
+  // 不让插件自动改构建配置
+  "java.configuration.updateBuildConfiguration": "disabled"
+}
